@@ -199,24 +199,7 @@ class _CafeState extends State<Cafe> {
                       borderRadius: BorderRadius.circular(80.0)),
                   splashColor: Colors.red,
                   onPressed: () async {
-                    if (report.description == "") {
-                      Alert(
-                        context: context,
-                        type: AlertType.error,
-                        title: langu=="Fr" ? 'Ajouter une description': "إضافة وصف",
-                        buttons: [
-                          DialogButton(
-                              child: Text(langu=="Ar" ? 'Ok': "موافق",),
-                              onPressed: () {
-                                Navigator.pop(context);
-                              },
-                              gradient: LinearGradient(colors: [
-                                Color.fromRGBO(116, 116, 191, 1.0),
-                                Color.fromRGBO(52, 138, 199, 1.0)
-                              ])),
-                        ],
-                      ).show();
-                    }
+                
                     if (im == null) {
                       Alert(
                         context: context,
