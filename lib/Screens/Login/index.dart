@@ -17,7 +17,7 @@ class LoginScreenState extends State<LoginScreen> {
 
     return Scaffold(
         floatingActionButton: FloatingActionButton(
-          child: langu == "Fr"
+          child: langu == "Ar"
               ? Image.asset(
                   "assets/france.jpg",
                   width: deviceWidth * 0.1,

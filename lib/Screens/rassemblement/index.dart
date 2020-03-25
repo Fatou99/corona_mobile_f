@@ -75,7 +75,7 @@ class _GatheringState extends State<Gathering> {
     return SafeArea(
         child: Scaffold(
            floatingActionButton: FloatingActionButton(
-          child: langu == "Fr"
+          child: langu == "Ar"
               ? Image.asset(
                   "assets/france.jpg",
                   width: deviceWidth * 0.1,
@@ -207,7 +207,7 @@ class _GatheringState extends State<Gathering> {
                         title: langu=="Fr" ? 'Veuillez prendre une photo': "يرجى التقاط صورة",
                         buttons: [
                           DialogButton(
-                              child: Text(langu=="Ar" ? 'Ok': "موافق"),
+                              child: Text(langu=="Fr" ? 'Ok': "موافق"),
                               onPressed: () {
                                 Navigator.pop(context);
                               },
@@ -232,11 +232,11 @@ class _GatheringState extends State<Gathering> {
                       Alert(
                         context: context,
                         type: AlertType.success,
-                        title: langu=="Fr" ? 'Merci pour votre aide !': "أشكركم على مساعدتكم!",
-                        desc: langu=="Ar" ? 'On vous souhaite santé et bien-être': "نتمنى لكم الصحة والرفاهية!",
+                        title: langu=="Fr" ? 'Merci pour votre aide !': "نشكركم على مساعدتكم",
+                        desc: langu=="Fr" ? 'On vous souhaite santé et bien-être': "نتمنى لكم الصحة والرفاهية",
                         buttons: [
                           DialogButton(
-                              child: Text(langu=="Ar" ? 'Fermer': "اغلاق"),
+                              child: Text(langu=="Fr" ? 'Fermer': "اغلاق"),
                               onPressed: () {
                                 Navigator.pop(context);
                               },
