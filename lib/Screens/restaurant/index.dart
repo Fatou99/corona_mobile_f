@@ -65,6 +65,7 @@ class _RestaurantState extends State<Restaurant> {
     });
   }
 
+
   @override
   Widget build(BuildContext context) {
     final deviceHeight = MediaQuery.of(context).size.height;
@@ -229,6 +230,7 @@ class _RestaurantState extends State<Restaurant> {
                       report.time = currentTime;
                       var data = report.toJson();
                       var res = await CallApi().postData(data, 'rep');
+
                       Alert(
                         context: context,
                         type: AlertType.success,

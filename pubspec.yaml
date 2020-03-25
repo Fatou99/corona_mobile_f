@@ -10,6 +10,8 @@ dependencies:
   dio: ^3.0.9
   http: ^0.12.0+4
   fluro: "^1.1.0"
+  firebase_storage: ^3.1.3
+  flutter_launcher_icons: ^0.7.4
   flutter:
     sdk: flutter
 
@@ -24,7 +26,10 @@ dev_dependencies:
 
 # For information on the generic Dart part of this file, see the
 # following page: https://www.dartlang.org/tools/pub/pubspec
-
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/antivirus.png"
 # The following section is specific to Flutter.
 flutter:
   # The following line ensures that the Material Icons font is
@@ -36,6 +41,7 @@ flutter:
   assets:
     - assets/coronavirus.jpg
     - assets/corona.jpg
+    - assets/antivirus.png
     - assets/no.png
     - assets/restaurant.jpg
     - assets/cafe.jpg

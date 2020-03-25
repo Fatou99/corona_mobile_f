@@ -8,6 +8,7 @@ import '../../Components/Button.dart';
 import '../../Components/Entry.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/scheduler.dart' show timeDilation;
+//flutter packages pub run flutter_launcher_icons:main
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key key}) : super(key: key);
